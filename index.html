@@ -1,20 +1,372 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Lens Care Optical</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="container">
-        <h1>Pugal Selvan</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed alias tempore officia doloribus distinctio
-            mollitia eligendi, veritatis eum iste assumenda repudiandae provident iusto numquam aliquam quasi ea quo
-            cupiditate!</p>
-    </div>
-</body>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="bi bi-eyeglasses"></i> Lens Care
+                <span class="d-block text-secondary fs-6">OPTICAL</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collection">Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="#contact" class="btn-custom">
+                            Visit Our Store
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="badge rounded-pill text-bg-light p-3 mb-3">
+                        <i class="bi bi-stars text-success"></i>
+                        See the World Clearly
+                    </span>
+
+                    <h1>
+                        Your Vision,<br>
+                        Our <span>Care.</span>
+                    </h1>
+
+                    <p>
+                        Discover stylish eyewear and comfortable lenses
+                        designed for your everyday life. At Lens Care
+                        Optical, your vision and style come first.
+                    </p>
+
+                    <a href="#collection" class="btn-custom me-2">
+                        Explore Collection
+                        <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+
+                    <a href="#services"
+                       class="btn btn-outline-secondary rounded-pill px-4 py-3 mt-2">
+                        Our Services
+                    </a>
+
+                    <div class="d-flex gap-4 mt-4 flex-wrap">
+                        <div>
+                            <h4 class="fw-bold mb-0">Style</h4>
+                            <small class="text-secondary">Modern Frames</small>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold mb-0">Comfort</h4>
+                            <small class="text-secondary">Everyday Wear</small>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold mb-0">Care</h4>
+                            <small class="text-secondary">Vision First</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <img
+                        src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=1000&q=85"
+                        alt="Stylish eyeglasses"
+                        class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="py-5" id="collection">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <p class="text-uppercase fw-semibold text-success">
+                    Find Your Perfect Look
+                </p>
+                <h2 class="section-title">Our Eyewear Collection</h2>
+                <p class="section-subtitle mt-3">
+                    Quality eyewear for every style and every occasion.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=600&q=80"
+                             alt="Fashion eyeglasses">
+                        <div class="p-4">
+                            <h5>Eyeglasses</h5>
+                            <p>Everyday frames with a stylish and comfortable fit.</p>
+                            <a href="#contact" class="text-success text-decoration-none fw-semibold">
+                                Enquire Now <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80"
+                             alt="Person wearing fashionable eyewear">
+                        <div class="p-4">
+                            <h5>Sunglasses</h5>
+                            <p>Complete your look with fashionable sunglasses.</p>
+                            <a href="#contact" class="text-success text-decoration-none fw-semibold">
+                                Enquire Now <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=600&q=80"
+                             alt="Optical lens frames">
+                        <div class="p-4">
+                            <h5>Contact Lenses</h5>
+                            <p>Explore contact lens options for your vision needs.</p>
+                            <a href="#contact" class="text-success text-decoration-none fw-semibold">
+                                Enquire Now <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=600&q=80"
+                             alt="Premium sunglasses">
+                        <div class="p-4">
+                            <h5>Premium Frames</h5>
+                            <p>Discover elegant frames for a refined look.</p>
+                            <a href="#contact" class="text-success text-decoration-none fw-semibold">
+                                Enquire Now <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="service-section py-5" id="services">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <p class="text-uppercase fw-semibold text-success">
+                    Care for Your Eyes
+                </p>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle mt-3">
+                    Helping you find the right eyewear and lens solutions.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <h5>Eye Check-up</h5>
+                        <p>Get guidance on vision checks and suitable eyewear.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-eyeglasses"></i>
+                        </div>
+                        <h5>Frame Selection</h5>
+                        <p>Choose frames that suit your face, style, and comfort.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h5>Frame Repair</h5>
+                        <p>Ask about adjustments and repair options for your frames.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h5>Lens Guidance</h5>
+                        <p>Get help choosing lenses based on your prescription.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5" id="about">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img
+                        src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=1000&q=85"
+                        alt="Optical glasses collection"
+                        class="about-img">
+                </div>
+
+                <div class="col-lg-6">
+                    <p class="text-uppercase fw-semibold text-success">
+                        About Lens Care
+                    </p>
+
+                    <h2 class="section-title mb-4">
+                        Clear Vision.<br>Confident Living.
+                    </h2>
+
+                    <p class="about-text">
+                        Lens Care Optical is dedicated to helping people
+                        find eyewear that combines comfort, quality, and style.
+                        We believe the right pair of glasses can make a
+                        difference in both your vision and confidence.
+                    </p>
+
+                    <div class="d-flex gap-3 mb-3">
+                        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+                        <div>
+                            <h6 class="fw-semibold">Stylish Collections</h6>
+                            <p class="text-secondary">Frames for different tastes and occasions.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 mb-3">
+                        <i class="bi bi-check-circle-fill text-success fs-4"></i>
+                        <div>
+                            <h6 class="fw-semibold">Customer-Focused Care</h6>
+                            <p class="text-secondary">Support in choosing suitable eyewear.</p>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-custom mt-2">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5" id="contact">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <p class="text-uppercase fw-semibold" style="color:#56d6cb">
+                    Get in Touch
+                </p>
+                <h2 class="section-title">Visit Lens Care Optical</h2>
+                <p class="mt-3">
+                    Have questions about eyewear? Contact us today.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="contact-info text-center">
+                        <i class="bi bi-geo-alt"></i>
+                        <h5 class="mt-3">Our Location</h5>
+                        <p class="mb-0">Add your shop address here</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="contact-info text-center">
+                        <i class="bi bi-telephone"></i>
+                        <h5 class="mt-3">Call Us</h5>
+                        <p class="mb-0">Add your phone number here</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="contact-info text-center">
+                        <i class="bi bi-envelope"></i>
+                        <h5 class="mt-3">Email Us</h5>
+                        <p class="mb-0">Add your email address here</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="https://wa.me/" class="btn btn-light rounded-pill px-4 py-3">
+                    <i class="bi bi-whatsapp text-success me-2"></i>
+                    Contact on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row
+                        justify-content-between align-items-center gap-3">
+                <p class="mb-0">
+                    &copy; 2026 Lens Care Optical. All rights reserved.
+                </p>
+
+                <div>
+                    <a href="#home">Home</a>
+                    <a href="#collection">Collection</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript for mobile navigation -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
